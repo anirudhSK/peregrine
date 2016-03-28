@@ -6,22 +6,26 @@ these topics.
 0. Performance requirements for a line-rate router.
    Router evolution over time.
 
-1. The architecture of a line-rate router: Why are routers architected as a pipeline?
+1. Motivating the match-action or lookup model of routers.
 
-2. Memory performance models.
+2. The architecture of a line-rate router: Why are routers architected as a pipeline?
 
-3. Building multi-ported memories from single-ported memories.
+3. Memory performance models.
 
-4. Dictionaries in hardware and their implementations (hash tables, cuckoo hashing, d-left, CAMs)
+4. Why bypassing or operand forwarding doesn't work at line rate?
 
-5. TCAM implementations in hardware.
+5. Building multi-ported memories from single-ported memories.
 
-6. The partitioned Bloom Filter idea.
+6. Dictionaries in hardware and their implementations (hash tables, cuckoo hashing, d-left, CAMs)
 
-7. Using permutation networks in lieu of a multiplexer.
+7. TCAM implementations in hardware.
 
-8. Some basics, required for building actual hardware.
-    --> Writing hardware in Verilog.
-    --> Using a silicon compiler like Synopsys DC.
-    --> (maybe) writing hardware in Chisel.
-    --> (maybe) formal verification of hardware.
+8. The partitioned Bloom Filter idea.
+
+9. Using permutation networks in lieu of a multiplexer.
+
+10. Some basics, required for building actual hardware.
+    * Writing hardware in Verilog.
+    * Using a silicon compiler like Synopsys DC.
+    * (maybe) writing hardware in Chisel.
+    * (maybe) formal verification of hardware.
