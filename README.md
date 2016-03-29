@@ -18,6 +18,10 @@ these topics.
 
 6. Dictionaries in hardware and their implementations (hash tables, cuckoo hashing, d-left, CAMs)
 
+7. Dictionaries with inserts and deletes in the data-plane
+   * MAC learning
+   * d-left hash tables used for caching
+
 7. TCAM implementations in hardware.
 
 8. The partitioned Bloom Filter idea.
