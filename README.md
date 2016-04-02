@@ -9,26 +9,30 @@ these topics.
 1. Motivating the match-action or lookup model of routers.
 
 2. The architecture of a line-rate router: Why are routers architected as a pipeline?
+   (this is the area and power argument)
 
-3. Memory performance models.
+3. The cost of a line-rate router: Why is the pipeline model in silicon more
+   effective than throwing an array of processors at the problem.
 
-4. Why bypassing or operand forwarding doesn't work at line rate?
+4. Memory performance models.
 
-5. Building multi-ported memories from single-ported memories.
+5. Why bypassing or operand forwarding doesn't work at line rate?
 
-6. Dictionaries in hardware and their implementations (hash tables, cuckoo hashing, d-left, CAMs)
+6. Building multi-ported memories from single-ported memories.
 
-7. Dictionaries with inserts and deletes in the data-plane
+7. Dictionaries in hardware and their implementations (hash tables, cuckoo hashing, d-left, CAMs)
+
+8. Dictionaries with inserts and deletes in the data-plane
    * MAC learning
    * d-left hash tables used for caching
 
-7. TCAM implementations in hardware.
+9. TCAM implementations in hardware.
 
-8. The partitioned Bloom Filter idea.
+10. The partitioned Bloom Filter idea.
 
-9. Using permutation networks in lieu of a multiplexer.
+11. Using permutation networks in lieu of a multiplexer.
 
-10. Some basics, required for building actual hardware.
+12. Some basics, required for building actual hardware.
     * Writing hardware in Verilog.
     * Using a silicon compiler like Synopsys DC.
     * (maybe) writing hardware in Chisel.
