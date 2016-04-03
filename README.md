@@ -37,3 +37,7 @@ these topics.
     * Using a silicon compiler like Synopsys DC.
     * (maybe) writing hardware in Chisel.
     * (maybe) formal verification of hardware.
+
+13. Predication vs. branches in hardware
+
+14. Dynamic vs. static data dependencies (x86 vs. VLIW/dataflow)
