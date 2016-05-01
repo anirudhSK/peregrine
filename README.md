@@ -41,3 +41,5 @@ these topics.
 13. Predication vs. branches in hardware
 
 14. Dynamic vs. static data dependencies (x86 vs. VLIW/dataflow)
+
+15. Parsing vs. lookup: Why do we need more parsers than pipelines for the same aggregate throughput?
