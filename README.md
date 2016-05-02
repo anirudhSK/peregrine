@@ -43,3 +43,6 @@ these topics.
 14. Dynamic vs. static data dependencies (x86 vs. VLIW/dataflow)
 
 15. Parsing vs. lookup: Why do we need more parsers than pipelines for the same aggregate throughput?
+
+16. The "market" case for programmability: Can we document the number of RFCs that routers are expected to implement, year on year? http://stanford.edu/~lavanyaj/papers/compiling15.pdf says it's 7000 RFCs, but it isn't clear how they get that number.
+
