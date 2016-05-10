@@ -46,3 +46,6 @@ these topics.
 
 16. The "market" case for programmability: Can we document the number of RFCs that routers are expected to implement, year on year? http://stanford.edu/~lavanyaj/papers/compiling15.pdf says it's 7000 RFCs, but it isn't clear how they get that number.
 
+17. How does this compare to using delay slots in the MIPS architecture?
+
+
