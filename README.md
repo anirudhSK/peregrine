@@ -48,4 +48,8 @@ these topics.
 
 17. How does this compare to using delay slots in the MIPS architecture?
 
+18. A first-order model for SRAM and DRAM cells. Ideally, a HSPICE simulation for these cells.
+
+
+
 
