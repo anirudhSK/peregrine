@@ -73,6 +73,40 @@ development for routers. The M40 was also the first known design to explicitly
 decouple the router control plane (the infrequent slow path of the router) from
 the data plane (the frequent packet-to-packet fast path of the router).
 
+Since the mid-2000s, the rise of datacenters has led to another shift in router
+design. Datacenters represent a growing market for routers/switches. Given the
+scale of networks within a datacenter (some estimates peg the number of nodes
+with an Amazon datacenter at around a million), it is imperative to
+aggressively cut down on costs. This has resulted in the commoditazation of
+switching chips, and the rise of "merchant silicon". The term "merchant
+silicon" refers to commodity switching chips manufactured at a large scale by
+semiconductor/silicon companies such as Broadcom and Marvell that can then be
+wrapped into a larger router box by a router vendor such as Dell, Arista,
+Cisco, or Juniper.
+
+This is not unlike how Dell wraps a motherboard and sheet metal around Intel's
+x86 processor chips to create a server machine. Within the datacenter context,
+many datacenter operators prefer buying these commodity switching chips
+directly from Broadcom (some estimates suggest that 65% of datacenter switching
+chips are Broadcom chips) and then designing their own routing software to
+control them, without relying on software provided by router vendors. In many
+cases, datacenter operators like Google go as far as designing their own router
+boxes as well.
+
+The result is that the router industry has really split into two distinct
+industries.  Much of the design of the switching chip itself happens in
+dedicated semiconductor design companies such as Broadcom, Marvell, and
+Qualcomm. Other router vendor companies build a motherboard and box around
+these switching chips and then write router software or a network operating
+system to control these chips. Increasingly, even companies such as Cisco and
+Juniper that had in-house ASIC design teams have moved increasingly towards
+building their routers around switching chips from companies such as Broadcom
+in a move to reduce the significant costs associated with in-house ASIC design.
+
+The final development in router design has been the 
+% OpenFlow
+% Programmable data planes
+
 % https://en.wikipedia.org/wiki/Pradeep_Sindhu
 % https://en.wikipedia.org/wiki/Juniper_M_Series#M40
 % Discuss Broadcom, merchant silicon, datacenters, and the like here.
