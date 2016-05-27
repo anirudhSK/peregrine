@@ -110,3 +110,6 @@ in a move to reduce the significant costs associated with in-house ASIC design.
 % https://en.wikipedia.org/wiki/Juniper_M_Series#M40
 % Discuss Broadcom, merchant silicon, datacenters, and the like here.
 % http://www.bloomberg.com/news/articles/2001-02-06/for-juniper-single-mindedness-wins-the-race
+% SCALE-OUT NETWORKING IN THE DATA CENTER from several UCSD folks in 2010
+% Data Center Switch Architecture in the Age of Merchant Silicon, same group from UCSD.
+
