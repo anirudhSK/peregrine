@@ -1,0 +1,81 @@
+Routers or switches (I use these two terms interchangeably) have a long history
+starting with the ARPANET. The ARPANET was an experimental computer network
+that ran over the telephone lines with the goal of interconnecting computers
+across several research sites within the U.S for timesharing their computing
+resources. The ARPANET later evolved into the Internet. There were two network
+architectures that were in consideration for the ARPANET. The first from Larry
+Roberts was to directly connect the computers (also known as hosts) to the
+telephone lines and have them handle routing, flow control, and reliability.
+The second from Wes Clark was to have a dedicated node at each site called an
+Interface Message Processor (IMP), which would communicate over the phone lines
+to IMPs at other sites. The hosts would then only have to worry about
+communicating with their own IMP.
+
+The second approach won out (Page 565 of the 1970 paper on the IMP) primarily
+because it decoupled network functionality into IMP functions (routing,
+reliability, congestion control) and host functions (application logic for
+generating network messages), allowing them to evolve independently.
+Practically this meant hosts, which significantly outnumbered IMPs, weren't
+disrupted during network upgrades.  For instance, the carrier phone lines could
+be replaced with a different communication technology---or a new routing
+protocol could be deployed---by upgrading IMPs alone, without disrupting the
+hosts. This made it very easy for new hosts to connect to the ARPANET, and was
+critical to the rapid growth of the ARPANET. In the mid 1970s, the same idea
+was critical to Kahn and Cerf's vision of internetworking, where many
+autonomous networks could be easily interconnected by using gateways without
+involving all nodes within each autonomous network.
+
+The IMPs were predecessors to the modern-day router and the original ARPANET
+design illustrates {\it why} routers are critical to evolvability: they provide
+a form of information hiding where many hosts or many autonomous networks can
+easily connect to each other without having to understand every detail about
+other hosts or other autonomous networks.
+
+IMPs were minicomputers with special purpose forwarding software, which were
+then rebranded as routers. The first IMP designed by Bolt, Beranak, and Newman
+(BBN) in 1969 was a ruggedized Honeywell DDP-516 minicomputer
+(https://en.wikipedia.org/wiki/Interface_Message_Processor and "The interface
+message processor for the ARPA computer network"). This IMP could connect to
+multiple host computers, providing them all with access to the ARPANET. The
+IMPs were an early form of what we call software routers today: they were
+merely software running on top of a general purpose computer. This approach was
+necessary for the IMPs because the ARPANET was still in a period of rapid
+growth and reloading IMP code as assembly programs on top of a computer was key
+to evolving the ARPANET. It was also sufficient because the telephone lines in
+the ARPANET were wimpy by modern standards: they didn't exceed 100 kbits/s.
+
+This approach of building routers by programming a minicomputer continued for
+at least two decades even as routers evolved from IMPs on the ARPANET to
+gateways for interconnecting networks to campus routers. Examples include David
+Mills' Fuzzball router that provided the NSFNET (the successor to the ARPANET
+in 1986 until 1995, when it evolved into the modern-day Internet) 56-kbit
+routing backbonne. The Fuzzball ran atop the PDP-11/73 minicomputers. Other
+examples include MIT/Noel Chiappa's C gateway project (1984); Proteon, a
+startup out of MIT in the 80s, and William Yeager's "Ships in the Night"
+Stanford campus router from 1981, which eventually formed the basis of Cisco in
+1987---perhaps, the first large company devoted exclusively to networking.
+
+Software routers were also sufficient during this time frame (roughly 1969 when
+the IMPs first surfaced until about 1995). Around 1995, the Internet really
+took off, and the explosive growth of the Internet in the form of rising
+traffic volumes resulted in growing demand for higher and higher link speeds.
+The net result of this is that most of the routers used in production since
+then have essentially been designed from the ground up (right from the logic
+gates) for the sole purpose of forwarding packets.
+
+Possibly the first example of this was the Juniper M40
+(https://en.wikipedia.org/wiki/Juniper_M_Series#M40), Juniper Networks' first
+product in 1998 that could have also been the first ASIC that explicitly
+targeted networking. The Juniper M40 was between 10 and 100 times faster than
+other software routers at the time and was historic in introducing the move
+towards ASIC-based designs for routers. This was probably influenced by the
+VLSI background of Juniper's founder Pradeep Sindhu
+(https://en.wikipedia.org/wiki/Pradeep_Sindhu), who was instrumental in
+designing the M40. Juniper may have also been responsible in part for getting
+CISCO investing more heavily in ASIC development for routers (because software
+routers no longer scaled) and the M40
+(https://en.wikipedia.org/wiki/Juniper_M_Series#M40) was probably the first
+design to explicitly decouple the router control and data planes---an idea that
+is at the root of software-defined networking today.
+
+% Discuss Broadcom, merchant silicon, datacenters, and the like here.
