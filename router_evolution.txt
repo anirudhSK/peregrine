@@ -79,3 +79,4 @@ design to explicitly decouple the router control and data planes---an idea that
 is at the root of software-defined networking today.
 
 % Discuss Broadcom, merchant silicon, datacenters, and the like here.
+% http://www.bloomberg.com/news/articles/2001-02-06/for-juniper-single-mindedness-wins-the-race
