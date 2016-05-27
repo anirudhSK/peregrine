@@ -103,7 +103,6 @@ Juniper that had in-house ASIC design teams have moved increasingly towards
 building their routers around switching chips from companies such as Broadcom
 in a move to reduce the significant costs associated with in-house ASIC design.
 
-The final development in router design has been the 
 % OpenFlow
 % Programmable data planes
 
