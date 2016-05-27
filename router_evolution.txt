@@ -56,27 +56,24 @@ Stanford campus router from 1981, which eventually formed the basis of Cisco in
 1987---perhaps, the first large company devoted exclusively to networking.
 
 Software routers were also sufficient during this time frame (roughly 1969 when
-the IMPs first surfaced until about 1995). Around 1995, the Internet really
-took off, and the explosive growth of the Internet in the form of rising
-traffic volumes resulted in growing demand for higher and higher link speeds.
-The net result of this is that most of the routers used in production since
-then have essentially been designed from the ground up (right from the logic
-gates) for the sole purpose of forwarding packets.
+the IMPs first surfaced until about 1995). Around 1995, the Internet's
+explosive growth in traffic volumes resulted in an urgent demand for faster
+routers.  As a result, most routers used in production since then have been
+designed using Application-Specific Integrated Circuits (ASICs)---essentially,
+{\it switching chips} designed from the ground up, in hardware, for the sole
+purpose of switching packets.
 
-Possibly the first example of this was the Juniper M40
-(https://en.wikipedia.org/wiki/Juniper_M_Series#M40), Juniper Networks' first
-product in 1998 that could have also been the first ASIC that explicitly
-targeted networking. The Juniper M40 was between 10 and 100 times faster than
-other software routers at the time and was historic in introducing the move
-towards ASIC-based designs for routers. This was probably influenced by the
-VLSI background of Juniper's founder Pradeep Sindhu
-(https://en.wikipedia.org/wiki/Pradeep_Sindhu), who was instrumental in
-designing the M40. Juniper may have also been responsible in part for getting
-CISCO investing more heavily in ASIC development for routers (because software
-routers no longer scaled) and the M40
-(https://en.wikipedia.org/wiki/Juniper_M_Series#M40) was probably the first
-design to explicitly decouple the router control and data planes---an idea that
-is at the root of software-defined networking today.
+Juniper Networks was likely the first router company to use a switching chip
+through its M40 router in 1998.  Not surprising, given Juniper founder, Pradeep
+Sindhu's background in VLSI design. The M40 was between 10 and 100x faster than
+software routers of the time, and was historically important in inducing an
+industry-wide move towards switching chips. For instance, to compete with
+Juniper's increasing link speeds, CISCO began to invest more heavily in ASIC
+development for routers. The M40 was also the first known design to explicitly
+decouple the router control plane (the infrequent slow path of the router) from
+the data plane (the frequent packet-to-packet fast path of the router).
 
+% https://en.wikipedia.org/wiki/Pradeep_Sindhu
+% https://en.wikipedia.org/wiki/Juniper_M_Series#M40
 % Discuss Broadcom, merchant silicon, datacenters, and the like here.
 % http://www.bloomberg.com/news/articles/2001-02-06/for-juniper-single-mindedness-wins-the-race
